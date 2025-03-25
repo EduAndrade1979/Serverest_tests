@@ -13,13 +13,15 @@ jobs:
 
       # Passo 2: Instala o Node.js
       - name: Instalar o Node.js
-        uses: actions/setup-node@v22.14.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.0' # Use a versão completa que você está usando
 
       # Passo 3: Instala o Newman
       - name: Instalar o Newman
         run: npm install -g newman
 
-      # Passo 4: Executa a Collection do Postman
+      # Passo 4: Executa os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
           newman run ./serverest.postman_collection.json \
