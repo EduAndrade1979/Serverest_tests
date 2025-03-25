@@ -24,7 +24,7 @@ jobs:
       # Passo 4: Executa os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
-          newman run serverest.postman_collection.json \
+          newman run Serverest.postman_collection.json \
             -e serverestDev.postman_environment.json \
             -g workspace.postman_globals.json \
             --folder "Fluxo completo" \
