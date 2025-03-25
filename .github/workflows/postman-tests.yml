@@ -13,7 +13,7 @@ jobs:
 
       # Passo 2: Instala o Node.js
       - name: Instalar o Node.js
-        uses: actions/setup-node@v18
+        uses: actions/setup-node@v22.14.0
 
       # Passo 3: Instala o Newman
       - name: Instalar o Newman
